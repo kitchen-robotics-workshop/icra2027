@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Now and Future of Kitchen Robotics — a proposed full-day ICRA 2027 workshop connecting robotic cooking, food science, and human experience in Seoul.">
+  <meta name="theme-color" content="#102b39">
+  <title>Now and Future of Kitchen Robotics | ICRA 2027 Workshop Proposal</title>
+  <style>
+    :root { --ink:#102b39; --muted:#506572; --paper:#fff; --soft:#f1f5f7; --line:#d6e0e5; --now:#d6f164; --future:#6be0d6; --width:1180px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:110px; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; font-size:17px; line-height:1.65; }
+    a { color:inherit; text-underline-offset:4px; }
+    a:hover { text-decoration-thickness:2px; }
+    button { font:inherit; }
+    :focus-visible { outline:3px solid #087d89; outline-offset:5px; }
+    .wrap { width:min(var(--width),calc(100% - 64px)); margin:auto; }
+    .skip { position:fixed; top:-90px; left:20px; z-index:100; background:white; padding:12px 18px; }
+    .skip:focus { top:12px; }
+    header { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.98); border-bottom:1px solid var(--line); }
+    .nav { min-height:82px; display:flex; align-items:center; justify-content:space-between; gap:25px; }
+    .brand { text-decoration:none; font-weight:800; font-size:16px; letter-spacing:-.4px; line-height:1.3; }
+    .brand small { display:block; color:var(--muted); font-size:12px; letter-spacing:1.5px; margin-top:5px; }
+    nav { display:flex; gap:25px; font-size:14px; font-weight:600; }
+    nav a { text-decoration:none; padding:12px 0; }
+    nav a:hover { text-decoration:underline; }
+    .menu[hidden] { display:none; }
+    .menu { display:none; border:1px solid var(--line); background:white; border-radius:3px; padding:8px 14px; }
+    .eyebrow { font-size:14px; letter-spacing:1.8px; font-weight:700; text-transform:uppercase; margin:0 0 20px; }
+    .hero { background:var(--ink); color:white; padding:64px 0 0; overflow:hidden; }
+    .hero-top { display:flex; gap:20px; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+    .hero .eyebrow { margin:0; color:#e1ecf2; }
+    .status { border:1px solid #64808e; padding:6px 12px; border-radius:3px; font-size:14px; }
+    h1 { font-size:clamp(48px,7.1vw,94px); font-weight:750; letter-spacing:-4px; line-height:1.06; margin:42px 0 30px; max-width:1050px; }
+    h1 .now { color:var(--now); } h1 .future { color:var(--future); }
+    .hero-bottom { display:grid; grid-template-columns:1.25fr 1fr; gap:60px; align-items:end; padding-bottom:54px; }
+    .lead { font-size:21px; color:#d2e0e8; max-width:590px; margin:0 0 26px; line-height:1.6; }
+    .buttons { display:flex; flex-wrap:wrap; gap:12px; }
+    .button { display:inline-flex; padding:12px 22px; text-decoration:none; background:var(--now); color:var(--ink); font-size:15px; font-weight:700; border:1px solid var(--now); border-radius:3px; }
+    .button:hover { background:white; border-color:white; }
+    .button.secondary { color:white; background:transparent; border-color:#728e9d; }
+    .button.secondary:hover { background:#234352; }
+    .facts { display:grid; grid-template-columns:1fr 1fr; gap:22px 26px; margin:0; }
+    .facts dt { font-size:12px; color:#a9c0cc; text-transform:uppercase; letter-spacing:1.4px; }
+    .facts dd { margin:6px 0 0; font-size:16px; font-weight:600; }
+    .hero-strip { border-top:1px solid #405c6a; display:flex; justify-content:space-between; gap:24px; padding:19px 0; font-size:14px; color:#c4d6e0; flex-wrap:wrap; }
+    section { padding:90px 0; scroll-margin-top:10px; }
+    h2 { font-size:clamp(32px,4vw,48px); letter-spacing:-1.8px; line-height:1.16; margin:0 0 26px; }
+    h3 { font-size:23px; line-height:1.3; letter-spacing:-.6px; margin:0 0 17px; }
+    p { margin:0 0 20px; }
+    .intro-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:85px; }
+    .body-copy { color:var(--muted); }
+    .body-copy p:last-child { margin-bottom:0; }
+    .section-top { display:flex; justify-content:space-between; align-items:end; gap:40px; margin-bottom:35px; }
+    .section-top h2 { margin-bottom:0; }
+    .section-top p { max-width:410px; color:var(--muted); margin:0; }
+    .themes { padding-top:0; }
+    .theme-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .theme { padding:38px; border-radius:4px; }
+    .theme.now { background:var(--now); } .theme.future { background:var(--future); }
+    .theme-number { font-size:13px; font-weight:700; letter-spacing:1.3px; display:flex; justify-content:space-between; margin-bottom:22px; }
+    .theme-title { font-size:clamp(54px,6.5vw,84px); letter-spacing:-4px; line-height:1; font-weight:800; margin-bottom:22px; }
+    .theme p { max-width:470px; }
+    .topic-list { padding:23px 0 0; list-style:none; display:flex; flex-wrap:wrap; gap:8px; border-top:1px solid #102b3938; margin:26px 0 0; }
+    .topic-list li { background:#ffffff60; padding:5px 11px; border-radius:3px; font-size:14px; }
+    .soft { background:var(--soft); }
+    .speaker-note { border:1px solid var(--line); background:white; padding:34px 38px; display:grid; grid-template-columns:1fr 1.3fr; gap:45px; }
+    .label { display:inline-block; background:var(--soft); font-size:14px; font-weight:700; padding:5px 11px; border-radius:3px; margin-bottom:16px; }
+    .speaker-note p:last-child { margin-bottom:0; }
+    .cfp-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:75px; }
+    .cfp-text { color:var(--muted); }
+    .details { margin:26px 0 0; }
+    .details div { display:flex; justify-content:space-between; gap:20px; border-bottom:1px solid var(--line); padding:14px 0; }
+    .details dt { font-weight:600; } .details dd { margin:0; text-align:right; }
+    .dates { background:var(--ink); padding:30px; color:white; border-radius:4px; }
+    .dates .eyebrow { color:var(--future); margin-bottom:18px; }
+    .dates .details { margin:0; }
+    .dates .details div { border-color:#405c6a; } .dates .details dd { color:#cadbe4; }
+    .dates p { color:#cadbe4; font-size:14px; margin:23px 0 0; }
+    .program { border-top:1px solid var(--line); }
+    .table-wrap { overflow-x:auto; }
+    table { width:100%; border-collapse:collapse; font-size:16px; text-align:left; }
+    caption { text-align:left; font-size:14px; color:var(--muted); padding-bottom:18px; }
+    th { font-size:12px; text-transform:uppercase; letter-spacing:1.4px; color:var(--muted); padding:15px 18px; border-bottom:2px solid var(--ink); }
+    td { padding:18px; border-bottom:1px solid var(--line); }
+    td:first-child { width:165px; white-space:nowrap; font-variant-numeric:tabular-nums; }
+    td:last-child { width:170px; }
+    .track { font-size:12px; font-weight:700; letter-spacing:.5px; padding:5px 9px; display:inline-block; border-radius:2px; }
+    .track.now { background:var(--now); } .track.future { background:var(--future); }
+    .track.shared { background:#e8edf0; }
+    .culinary { background:var(--ink); color:white; }
+    .culinary .eyebrow { color:var(--future); }
+    .culinary-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:85px; }
+    .culinary p { color:#cadbe4; }
+    .discussion { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-top:35px; }
+    .discussion div { border-top:1px solid #647e8a; padding-top:18px; font-size:15px; }
+    .discussion strong { display:block; color:white; margin-bottom:6px; }
+    .discussion span { color:#bed0da; }
+    .organizer-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .person { border-top:2px solid var(--ink); padding:24px 0 12px; }
+    .person .initials { color:var(--muted); font-size:13px; letter-spacing:2px; margin-bottom:25px; }
+    .person h3 { font-size:21px; margin:0 0 6px; }
+    .person p { color:var(--muted); font-size:15px; margin:0; }
+    .person a { font-size:14px; display:inline-block; margin-top:10px; overflow-wrap:anywhere; }
+    .closing { border-top:1px solid var(--line); padding-top:45px; padding-bottom:50px; }
+    .closing-grid { display:grid; grid-template-columns:1fr 1fr; gap:85px; }
+    .closing h3 { font-size:23px; } .closing p { color:var(--muted); font-size:16px; }
+    footer { background:var(--soft); padding:25px 0; font-size:13px; color:var(--muted); }
+    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:15px; }
+    @media (max-width:950px) { nav { gap:16px; } .hero-bottom { gap:35px; } .intro-grid,.culinary-grid { gap:45px; } .cfp-grid { gap:40px; } .organizer-grid { grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:760px) {
+      .wrap { width:calc(100% - 36px); } .nav { min-height:72px; flex-wrap:wrap; gap:0; padding:15px 0; } .menu { display:block; }
+      nav { width:100%; flex-wrap:wrap; gap:2px 24px; padding:12px 0 0; } html.js nav { display:none; } html.js nav.open { display:flex; }
+      .hero { padding-top:35px; } .hero-top { gap:12px; } .hero .eyebrow { font-size:12px; } .status { font-size:12px; }
+      h1 { letter-spacing:-2px; margin:30px 0; font-size:clamp(42px,9.2vw,66px); } .hero-bottom { grid-template-columns:1fr; gap:36px; padding-bottom:32px; }
+      .lead { font-size:18px; } .hero-strip { gap:8px; font-size:13px; } section { padding:58px 0; }
+      .intro-grid,.theme-grid,.speaker-note,.cfp-grid,.culinary-grid,.closing-grid { grid-template-columns:1fr; gap:25px; }
+      .theme { padding:28px; } .theme-title { font-size:64px; } .section-top { display:block; } .section-top p { margin-top:20px; }
+      .speaker-note { padding:25px; } .discussion { gap:18px; grid-template-columns:1fr; } .discussion div { padding-top:12px; }
+      th,td { padding:14px 10px; } td:first-child { width:auto; font-size:14px; } td:last-child { width:auto; } table { min-width:520px; }
+      .organizer-grid { gap:25px; } .closing { padding-top:40px; } .facts { gap:18px; }
+    }
+    @media (max-width:400px) { .organizer-grid { grid-template-columns:1fr; } .brand { font-size:14px; } .theme-title { font-size:54px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+    .speaker-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:25px; margin:25px 0 45px; }
+    .speaker-card { min-width:0; }
+    .portrait { display:block; width:120px; height:180px; object-fit:cover; object-position:center top; border-radius:4px; margin:0 0 18px; background:#dce5eb; }
+    .speaker-card h3 { font-size:21px; margin:0 0 6px; }
+    .speaker-card p { font-size:15px; color:var(--muted); margin:0 0 8px; }
+    .speaker-card .label { margin-bottom:12px; background:white; }
+    .speaker-track { display:flex; gap:15px; align-items:center; margin-top:40px; }
+    .speaker-track h3 { margin:0; }
+    .chef-placeholder { aspect-ratio:1; border:1px dashed #8ba1af; border-radius:4px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; text-align:center; background:#e7edf1; color:var(--muted); }
+    .tentative-note { color:var(--muted); max-width:850px; }
+    .talk-note { display:block; color:var(--muted); font-size:14px; margin-top:5px; }
+    @media(max-width:950px) { .speaker-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:450px) { .speaker-grid { gap:18px; } .portrait { width:74px; height:110px; } .speaker-card h3 { font-size:18px; } .speaker-card p { font-size:14px; } }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#main">KITCHEN ROBOTICS<small>ICRA 2027 · NOW / FUTURE</small></a>
+      <button class="menu" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu</button>
+      <nav id="navigation" aria-label="Main navigation"><a href="#about">About</a><a href="#topics">Topics</a><a href="#speakers">Speakers</a><a href="#papers">Call for papers</a><a href="#program">Program</a><a href="#organizers">Organizers</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="hero">
+      <div class="wrap">
+        <div class="hero-top"><p class="eyebrow">ICRA 2027 · Seoul, Korea</p><span class="status">Proposed full-day workshop</span></div>
+        <h1><span class="now">Now</span> and <span class="future">Future</span><br>of Kitchen Robotics</h1>
+        <div class="hero-bottom">
+          <div><p class="lead">From robots that manipulate food to systems that rethink how we cook, eat, and experience it.</p><div class="buttons"><a class="button" href="#topics">Explore the themes</a><a class="button secondary" href="#program">View tentative program</a></div></div>
+          <dl class="facts"><div><dt>Location</dt><dd>Seoul, Korea</dd></div><div><dt>Format</dt><dd>Full day · proposed</dd></div><div><dt>Workshop date</dt><dd>To be announced</dd></div><div><dt>Submissions</dt><dd>Call coming soon</dd></div></dl>
+        </div>
+        <div class="hero-strip"><span>Robot manipulation · Food science · Human experience</span></div>
+      </div>
+    </div>
+    <section id="about"><div class="wrap intro-grid"><div><p class="eyebrow">01 / The workshop</p><h2>The kitchen is a frontier for embodied intelligence.</h2></div><div class="body-copy"><p>Understanding a recipe is only the beginning. A kitchen robot must handle food that deforms, breaks, flows, and changes with heat; use tools under contact; and coordinate long tasks in spaces designed for people.</p><p>This proposed workshop brings together robotics, food science, materials, design, and healthcare. We connect today’s challenges in robotic cooking with a broader question: what becomes possible when robots, food, and human experience are designed together?</p><p>Through talks, posters, demonstrations, and discussion, we aim to develop shared challenge problems, new collaborations, and a research roadmap for the next decade.</p></div></div></section>
+    <section id="topics" class="themes"><div class="wrap"><div class="section-top"><div><p class="eyebrow">02 / Two complementary perspectives</p><h2>One kitchen. Two horizons.</h2></div><p>Grounded in physical manipulation today. Open to rethinking the whole system tomorrow.</p></div><div class="theme-grid">
+      <article class="theme now"><div class="theme-number"><span>01 / MORNING</span><span>ROBOT + FOOD</span></div><div class="theme-title">NOW</div><h3>Robot manipulation for kitchen tasks</h3><p>What does it take to make robotic cooking reliable in the real world? Explore the hardware, sensing, learning, and control behind physical food manipulation.</p><ul class="topic-list"><li>Food perception</li><li>Multimodal sensing</li><li>Food-state monitoring</li><li>Planning &amp; control</li><li>Tool-based manipulation</li><li>Robot learning</li><li>Foundation models / VLA</li><li>Soft hardware</li><li>Modelling &amp; simulation</li><li>Sim-to-real transfer</li><li>Human–robot interaction</li><li>Safety &amp; deployment</li></ul></article>
+      <article class="theme future"><div class="theme-number"><span>02 / AFTERNOON</span><span>ROBOT + FOOD + HUMAN</span></div><div class="theme-title">FUTURE</div><h3>Re-designing food, bodies, and senses</h3><p>What if food and eating systems were part of the design space? Explore new materials, sensory capabilities, and ways for robots to interact with human needs.</p><ul class="topic-list"><li>Programmable food</li><li>Edible robots</li><li>Robot-friendly food design</li><li>Robotic oral processing</li><li>Chewing &amp; feeding simulators</li><li>Taste sensing</li><li>Smell sensing</li><li>Sustainable materials</li><li>Personalized interaction</li><li>Culinary experiences</li></ul></article>
+    </div></div></section>
+    <section id="speakers" class="soft"><div class="wrap"><p class="eyebrow">03 / Invited voices</p><h2>Tentative speakers</h2><p class="tentative-note">The following speakers are proposed candidates. Invitations and participation are not yet confirmed; talk titles and individual time slots are provisional.</p><div class="speaker-track"><span class="track now">NOW</span><h3>Robot manipulation for kitchen tasks</h3></div><div class="speaker-grid"><article class="speaker-card"><img class="portrait" src="images/oliver-kroemer.jpg" alt="Portrait of Oliver Kroemer" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Oliver Kroemer</h3><p>Carnegie Mellon University</p></article><article class="speaker-card"><img class="portrait" src="images/dennis-hong.jpg" alt="Portrait of Dennis Hong" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Dennis Hong</h3><p>UCLA</p></article><article class="speaker-card"><img class="portrait" src="images/pulkit-agrawal.jpg" alt="Portrait of Pulkit Agrawal" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Pulkit Agrawal</h3><p>MIT</p></article><article class="speaker-card"><img class="portrait" src="images/dorsa-sadigh.jpg" alt="Portrait of Dorsa Sadigh" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Dorsa Sadigh</h3><p>Stanford University</p></article></div><div class="speaker-track"><span class="track future">FUTURE</span><h3>Re-designing food, bodies, and senses</h3></div><div class="speaker-grid"><article class="speaker-card"><img class="portrait" src="images/lining-yao.jpg" alt="Portrait of Lining Yao" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Lining Yao</h3><p>UC Berkeley</p><p>Planned discussion: the food lifecycle and designing food for robotic manipulation.</p></article><article class="speaker-card"><img class="portrait" src="images/dario-floreano.jpg" alt="Portrait of Dario Floreano" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Dario Floreano</h3><p>EPFL</p></article><article class="speaker-card"><img class="portrait" src="images/josie-hughes.jpg" alt="Portrait of Josie Hughes" width="600" height="600" loading="lazy"><span class="label">Tentative</span><h3>Josie Hughes</h3><p>EPFL</p></article><article class="speaker-card"><div class="chef-placeholder">Culinary guest<br>To be identified</div><span class="label">Potential participant</span><h3>Chef perspective</h3><p>Professional chef · name TBA</p><p>A culinary perspective on practical kitchen needs and future food experiences.</p></article></div></div></section>
+    <section id="papers"><div class="wrap cfp-grid"><div><p class="eyebrow">04 / Contribute</p><h2>Call for papers</h2><span class="label">Tentative timeline</span><p class="cfp-text">We plan to invite short papers across both workshop themes, from established kitchen-robotics methods to emerging ideas at the intersection of food, robots, and people.</p><p class="cfp-text">The proposed submission format is a two-page short paper, with single-blind peer review and poster presentations for accepted contributions. Final instructions will be published when the call opens.</p><dl class="details"><div><dt>Proposed length</dt><dd>2 pages</dd></div><div><dt>Proposed review</dt><dd>Single-blind</dd></div><div><dt>Presentation</dt><dd>Posters; selected spotlights planned</dd></div></dl></div><aside class="dates" aria-label="Important dates"><p class="eyebrow">Tentative dates</p><dl class="details"><div><dt>Submission opens</dt><dd>15 February 2027</dd></div><div><dt>Paper deadline</dt><dd>2 April 2027</dd></div><div><dt>Notification</dt><dd>16 April 2027</dd></div><div><dt>Camera-ready</dt><dd>30 April 2027</dd></div><div><dt>Workshop</dt><dd>24 or 28 May 2027 · TBC</dd></div></dl><p>All deadlines are planned for 23:59 Anywhere on Earth (UTC−12). Dates remain provisional until the workshop and conference schedule are confirmed. The submission platform, reference allowance, and archival policy will be included in the final call.</p></aside></div></section>
+    <section id="program" class="program"><div class="wrap"><div class="section-top"><div><p class="eyebrow">05 / A day of exchange</p><h2>Tentative program</h2></div><p>Morning: current kitchen robotics.<br>Afternoon: food, bodies, and senses.<br>All times are local to Seoul (KST).</p></div><div class="table-wrap" tabindex="0" role="region" aria-label="Tentative program table, horizontally scrollable on small screens"><table><caption>Tentative full-day schedule. All named speakers and time allocations are provisional; participation and room are not yet confirmed.</caption><thead><tr><th scope="col">Time</th><th scope="col">Session</th><th scope="col">Theme</th></tr></thead><tbody>
+      <tr><td>08:30–08:40</td><td>Opening remarks</td><td><span class="track shared">WELCOME</span></td></tr>
+      <tr><td>08:40–09:10</td><td>Oliver Kroemer · tentative<span class="talk-note">Talk title TBA</span></td><td><span class="track now">NOW</span></td></tr><tr><td>09:10–09:40</td><td>Dennis Hong · tentative<span class="talk-note">Talk title TBA</span></td><td><span class="track now">NOW</span></td></tr><tr><td>09:40–10:00</td><td>Organizer talk<span class="talk-note">Speaker TBA</span></td><td><span class="track now">NOW</span></td></tr>
+      <tr><td>10:00–10:30</td><td>Coffee break · posters and demos</td><td><span class="track shared">EXCHANGE</span></td></tr>
+      <tr><td>10:30–11:00</td><td>Pulkit Agrawal · tentative<span class="talk-note">Talk title TBA</span></td><td><span class="track now">NOW</span></td></tr><tr><td>11:00–11:30</td><td>Dorsa Sadigh · tentative<span class="talk-note">Talk title TBA</span></td><td><span class="track now">NOW</span></td></tr><tr><td>11:30–12:00</td><td>Selected contributed talk</td><td><span class="track now">NOW</span></td></tr>
+      <tr><td>12:00–13:30</td><td>Lunch break · posters and demos</td><td><span class="track shared">EXCHANGE</span></td></tr>
+      <tr><td>13:30–14:00</td><td>Lining Yao · tentative<span class="talk-note">Proposed focus: food lifecycle and robot-friendly food design</span></td><td><span class="track future">FUTURE</span></td></tr><tr><td>14:00–14:30</td><td>Dario Floreano · tentative<span class="talk-note">Talk title TBA</span></td><td><span class="track future">FUTURE</span></td></tr><tr><td>14:30–14:50</td><td>Organizer talk<span class="talk-note">Speaker TBA</span></td><td><span class="track future">FUTURE</span></td></tr>
+      <tr><td>14:50–15:20</td><td>Contributed spotlight talks</td><td><span class="track future">FUTURE</span></td></tr>
+      <tr><td>15:20–16:10</td><td>Coffee break · posters and demos</td><td><span class="track shared">EXCHANGE</span></td></tr>
+      <tr><td>16:10–16:40</td><td>Chef perspective · potential participant<span class="talk-note">Chef to be identified</span></td><td><span class="track future">FUTURE</span></td></tr><tr><td>16:40–17:10</td><td>Josie Hughes · tentative<span class="talk-note">Talk title TBA</span></td><td><span class="track future">FUTURE</span></td></tr>
+      <tr><td>17:10–17:40</td><td>NOW × FUTURE panel discussion</td><td><span class="track shared">PANEL</span></td></tr>
+      <tr><td>17:40–18:00</td><td>Closing remarks and awards</td><td><span class="track shared">CLOSING</span></td></tr>
+    </tbody></table></div></div></section>
+    <section class="culinary"><div class="wrap"><div class="culinary-grid"><div><p class="eyebrow">06 / Beyond the lab</p><h2>Robotics ×<br>Culinary practice</h2></div><div><p>What should kitchen robots do—and what do chefs, industry practitioners, and the people eating the food need from them?</p><p>We plan a moderated panel bringing these perspectives together, with an emphasis on participation from Seoul’s culinary and robotics communities. Chef and industry participants will be announced after confirmation.</p></div></div><div class="discussion"><div><strong>Practical requirements</strong><span>Kitchen workflows, reliability, and deployment.</span></div><div><strong>Human experience</strong><span>Accessibility, taste, and personal preferences.</span></div><div><strong>Shared directions</strong><span>Open challenges and opportunities for collaboration.</span></div></div></div></section>
+    <section id="organizers"><div class="wrap"><p class="eyebrow">07 / The organizing team</p><h2>Organizers</h2><div class="organizer-grid">
+      <article class="person"><img class="portrait" src="images/yi-zhang.jpg" alt="Portrait of Yi Zhang" width="600" height="600" loading="lazy"><h3>Yi Zhang</h3><p>University of Cambridge</p><a href="mailto:yz892@cam.ac.uk">yz892@cam.ac.uk</a></article>
+      <article class="person"><img class="portrait" src="images/marina-aoyama.jpg" alt="Portrait of Marina Y. Aoyama" width="600" height="600" loading="lazy"><h3>Marina Y. Aoyama</h3><p>The University of Edinburgh</p><a href="mailto:m.aoyama@sms.ed.ac.uk">m.aoyama@sms.ed.ac.uk</a></article>
+      <article class="person"><img class="portrait" src="images/benhui-dai.jpg" alt="Portrait of Benhui Dai" width="600" height="600" loading="lazy"><h3>Benhui Dai</h3><p>EPFL</p><a href="mailto:benhui.dai@epfl.ch">benhui.dai@epfl.ch</a></article>
+      <article class="person"><img class="portrait" src="images/yonghyeon-lee.jpg" alt="Portrait of Yonghyeon Lee" width="600" height="600" loading="lazy"><h3>Yonghyeon Lee</h3><p>Yonsei University</p><a href="mailto:yonghyeon.lee@yonsei.ac.kr">yonghyeon.lee@yonsei.ac.kr</a></article>
+      <article class="person"><img class="portrait" src="images/kento-kawaharazuka.jpg" alt="Portrait of Kento Kawaharazuka" width="600" height="600" loading="lazy"><h3>Kento Kawaharazuka</h3><p>The University of Tokyo</p><a href="mailto:kawaharazuka@jsk.imi.i.u-tokyo.ac.jp">kawaharazuka@jsk.imi.i.u-tokyo.ac.jp</a></article>
+      <article class="person"><img class="portrait" src="images/fumiya-iida.jpg" alt="Portrait of Fumiya Iida" width="600" height="600" loading="lazy"><h3>Fumiya Iida</h3><p>The University of Tokyo</p><a href="mailto:fumiya-iida@g.ecc.u-tokyo.ac.jp">fumiya-iida@g.ecc.u-tokyo.ac.jp</a></article>
+    </div></div></section>
+    <section class="closing"><div class="wrap closing-grid"><div><p class="eyebrow">Our starting point</p><h3>Cooking Robotics at ICRA 2024</h3><p>Building on the first workshop’s exchange between robotics researchers and professional chefs, this edition connects physical manipulation with new directions in food and human systems.</p><a href="https://sites.google.com/view/icra2024cookingrobotics/home">Visit the previous workshop</a></div><div><p class="eyebrow">Get in touch</p><h3>Join the conversation.</h3><p>For workshop enquiries, feel free to contact any of the organizers. Participation and submission details will be updated as the proposal develops.</p><a href="#organizers">View organizer contacts</a></div></div></section>
+  </main>
+  <footer><div class="wrap"><span>Now and Future of Kitchen Robotics · Proposed ICRA 2027 Workshop</span><a href="https://2027.ieee-icra.org/">ICRA 2027 conference website</a></div></footer>
+  <script>
+    document.documentElement.classList.add('js');
+    const menu = document.querySelector('.menu');
+    const navigation = document.querySelector('#navigation');
+    menu.hidden = false;
+    function closeMenu() { navigation.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); }
+    menu.addEventListener('click', () => { const open = navigation.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
+    navigation.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && navigation.classList.contains('open')) { closeMenu(); menu.focus(); } });
+    window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
+  </script>
+</body>
+</html>
