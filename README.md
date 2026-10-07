@@ -29,7 +29,7 @@ Use GitHub's pencil button on `site/index.html`. Search for a section heading or
 - Verify that Yi Zhang's supplied organizer email should be the public contact address.
 - Finalize the submission dates, platform, reference allowance, archival policy, and presentation format. Replace the announcement with a working submission link once submissions open.
 - Finalize the program. The source contains two incompatible timetable versions; this site uses the detailed version as an illustrative draft. The chef slot is provisionally 16:10–16:40 and Josie Hughes follows at 16:40–17:10; all allocations are subject to confirmation.
-- Organizer and speaker portraits are bundled in `site/images/`; profile and photo-source links appear on the cards. See `PHOTO_SOURCES.md` for provenance. Replace portraits with approved images when supplied.
+- Organizer and speaker portraits are bundled in `site/images/`. Profile and photo-source links are intentionally omitted from the website. See `PHOTO_SOURCES.md` for internal provenance, and replace portraits with approved images when supplied.
 
 The website labels proposed speaker candidates as tentative throughout. It does not claim workshop acceptance. No unofficial IEEE logos or invented photographs are included.
 
