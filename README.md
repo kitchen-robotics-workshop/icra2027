@@ -24,14 +24,14 @@ Use GitHub's pencil button on `site/index.html`. Search for a section heading or
 
 - Update proposal status in the hero, page title, description, and footer after acceptance.
 - Add the confirmed workshop date and room to the hero facts.
-- The speaker cards and individual program slots are tentative. Update their status only after participation is confirmed. Lining Yao’s topic is a proposed discussion focus, not an agreed talk title. The chef is unnamed.
+- Oliver Kroemer, Dennis Hong, Lining Yao, and Josie Hughes are marked as confirmed speakers. Other speaker cards remain tentative. Individual program times and talk titles are provisional; Lining Yao’s topic is a proposed discussion focus, not an agreed talk title. The chef is unnamed.
 - Fumiya Iida is listed at the University of Tokyo, as verified against its current faculty directory.
 - Verify that Yi Zhang's supplied organizer email should be the public contact address.
 - Finalize the submission dates, platform, reference allowance, archival policy, and presentation format. Replace the announcement with a working submission link once submissions open.
 - Finalize the program. The source contains two incompatible timetable versions; this site uses the detailed version as an illustrative draft. The chef slot is provisionally 16:10–16:40 and Josie Hughes follows at 16:40–17:10; all allocations are subject to confirmation.
 - Organizer and speaker portraits are bundled in `site/images/`. Profile and photo-source links are intentionally omitted from the website. See `PHOTO_SOURCES.md` for internal provenance, and replace portraits with approved images when supplied.
 
-The website labels proposed speaker candidates as tentative throughout. It does not claim workshop acceptance. No unofficial IEEE logos or invented photographs are included.
+The website distinguishes confirmed speakers from proposed candidates. It does not claim workshop acceptance. No unofficial IEEE logos or invented photographs are included.
 
 ## Files
 
