@@ -24,7 +24,7 @@ Use GitHub's pencil button on `site/index.html`. Search for a section heading or
 
 - Update proposal status in the hero, page title, description, and footer after acceptance.
 - Add the confirmed workshop date and room to the hero facts.
-- Oliver Kroemer, Dennis Hong, Lining Yao, Josie Hughes, and Bokeon Kwak are marked as confirmed speakers. Other speaker cards remain tentative. Individual program times and talk titles are provisional; Lining Yao’s topic is a proposed discussion focus, not an agreed talk title. The chef is unnamed.
+- Oliver Kroemer, Dennis Hong, Lining Yao, Josie Hughes, and Bokeon Kwak are marked as confirmed speakers. Other speaker cards remain tentative. The program's topic areas are suggestions based on each speaker's research and the workshop themes, not agreed talk titles; individual time slots are provisional. The chef is unnamed.
 - Bokeon Kwak is listed at Sejong University, where his current faculty profile says he joined in 2026. The Soft Robotics TC's support for the Best Paper Award is shown in the call for papers; award details and selection process are still to be announced.
 - Fumiya Iida is listed at the University of Tokyo, as verified against its current faculty directory.
 - Verify that Yi Zhang's supplied organizer email should be the public contact address.
