@@ -1,6 +1,6 @@
-# Portrait sources
+# Image sources
 
-Retrieved 7 October 2026 from the linked personal or institutional profiles. Portraits are used to identify the listed people; no open reuse license is asserted. Original rights remain with their owners.
+Portraits were retrieved from the linked personal or institutional profiles. They are used to identify the listed people; no open reuse license is asserted. Original rights remain with their owners. The original portraits were retrieved 7 October 2026; the Bokeon Kwak portrait and TC graphic were retrieved 22 October 2026.
 
 | Person | Profile / source page | Local portrait |
 | --- | --- | --- |
@@ -15,5 +15,7 @@ Retrieved 7 October 2026 from the linked personal or institutional profiles. Por
 | Pulkit Agrawal | https://people.csail.mit.edu/pulkitag/ | `site/images/pulkit-agrawal.jpg` |
 | Dorsa Sadigh | https://dorsa.fyi/ | `site/images/dorsa-sadigh.jpg` |
 | Lining Yao | https://me.berkeley.edu/people/lining-yao/ | `site/images/lining-yao.jpg` |
-| Dario Floreano | https://people.epfl.ch/dario.floreano?lang=en | `site/images/dario-floreano.jpg` |
+| Bokeon Kwak | https://sejong.elsevierpure.com/en/persons/bokeon-kwak/ | `site/images/bokeon-kwak.jpg` |
 | Josie Hughes | https://people.epfl.ch/josie.hughes | `site/images/josie-hughes.jpg` |
+
+The Soft Robotics graphic in `site/images/soft-robotics-tc.png` is from the [IEEE RAS Soft Robotics Technical Committee's official site](https://softrobotics.org/), at `https://softrobotics.org/wp-content/uploads/2026/02/soft-robotics-2.png`. No open reuse license is asserted.
