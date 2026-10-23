@@ -30,6 +30,7 @@ Use GitHub's pencil button on `site/index.html`. Search for a section heading or
 - Verify that Yi Zhang's supplied organizer email should be the public contact address.
 - Finalize the submission dates, platform, reference allowance, archival policy, and presentation format. Replace the announcement with a working submission link once submissions open.
 - Finalize the program. The source contains two incompatible timetable versions; this site uses the detailed version as an illustrative draft. The chef slot is provisionally 16:10–16:40 and Josie Hughes follows at 16:40–17:10; all allocations are subject to confirmation.
+- Yi Zhang is named for the NOW organizer talk and Benhui Dai for the FUTURE organizer talk. Their topic areas, like the invited speakers' topic areas, are illustrative rather than agreed talk titles.
 - Organizer and speaker portraits and the Soft Robotics TC graphic are bundled in `site/images/`. Profile and image-source links are intentionally omitted from the website. See `PHOTO_SOURCES.md` for internal provenance, and replace portraits with approved images when supplied.
 
 The website distinguishes confirmed speakers from proposed candidates. It does not claim workshop acceptance. The TC graphic comes from the committee's official site; no invented photographs are included.
