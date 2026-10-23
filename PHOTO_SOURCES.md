@@ -19,3 +19,5 @@ Portraits were retrieved from the linked personal or institutional profiles. The
 | Josie Hughes | https://people.epfl.ch/josie.hughes | `site/images/josie-hughes.jpg` |
 
 The Soft Robotics graphic in `site/images/soft-robotics-tc.png` is from the [IEEE RAS Soft Robotics Technical Committee's official site](https://softrobotics.org/), at `https://softrobotics.org/wp-content/uploads/2026/02/soft-robotics-2.png`. No open reuse license is asserted.
+
+The ICRA 2027 Seoul mark in `site/images/icra-2027-seoul.jpg` is from the conference's [official brand page](https://2027.ieee-icra.org/about/brand-identity-and-guidelines/), at `https://2027.ieee-icra.org/wp-content/uploads/sites/4/2024/04/ICRA2027_LOGOICRA-1-scaled.jpg`. It was retrieved 23 October 2026 and is displayed intact on a white background.
